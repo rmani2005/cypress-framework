@@ -8,7 +8,7 @@ agent any
     HOME = '.'
   } 
   stages {
-  	stage('PreCond') {
+  	stage('Pre installation of Node and npm installation of packages') {
             agent {
                 docker {
                     image 'node:18'
@@ -19,36 +19,40 @@ agent any
                 sh 'node -v'
                 sh 'npm install'
                 //Execute the Cypress scripts
-                sh 'npm run cy:run:headless:Test'
+                sh 'npm run cy:open:headless:Test'
             }
         }
   
   
-    stage('Build') {
-      steps {
-	sh 'echo "XXXXXXXXXXXXBuilding block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
-        //sh 'docker build -t manikandanravi9/mybiositenextjs:latest .'
-        sh 'echo "XXXXXXXXXXXXBuilding block Completed XXXXXXXXXXXXXXXXXXXXXXXXx"'
+    stage('Post Execution') {
+        steps
+        {
+          echo 'Post Execution Starts!'
+        }
+        post 
+            {
+                success 
+                {
+                    archiveArtifacts artifacts:'results/mybioTest.cy.js/', fingerprint: true
+                    echo 'Successfully!'
+                }
+                
+		        failure {
+		            echo 'Failed!'
+		        }
+		        unstable {
+		            echo 'This will run only if the run was marked as unstable'
+		        }
+		        changed {
+		            echo 'This will run only if the state of the Pipeline has changed'
+		            echo 'For example, if the Pipeline was previously failing but is now successful'
+		        }
+                
+            }
       }
-    }
-    stage('Login') {
-      steps {
-       sh 'echo "XXXXXXXXXXXXDocker hub loginstarted XXXXXXXXXXXXXXXXXXXXXXXXx"'
-        //sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-      }
-    }
-    stage('Push') {
-      steps {
-        sh 'echo "XXXXXXXXXXXXPushing the Docker hub image block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
-       // sh 'docker push manikandanravi9/mybiositenextjs:latest'
-      }
-    }
-    stage('Run in local host') {
-      steps {
-        sh 'echo "XXXXXXXXXXXXPushing the Docker hub image block started XXXXXXXXXXXXXXXXXXXXXXXXx"'
-        //sh 'docker run -d -p 3002:3000 manikandanravi9/mybiositenextjs:latest'
-      }
-  }
 }
+        
+
+
 }		 
 		 
