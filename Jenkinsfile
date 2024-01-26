@@ -11,7 +11,7 @@ agent any
   	stage('Pre installation of Node and npm installation of packages') {
             agent {
                 docker {
-                    image 'node:18'
+                    image 'node:21'
                 }	
             }
             
