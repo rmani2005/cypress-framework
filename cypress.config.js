@@ -20,7 +20,8 @@ module.exports = defineConfig({
     // Command timeout overridden for E2E tests
     defaultCommandTimeout: 10000,
     //urls:
-    baseUrl: "https://manikandanravi.in",
+    //baseUrl: "https://manikandanravi.in",
+    baseUrl: "http://localhost:3002"
     
     //BDD
    //specPattern: 'cypress/e2e/helloCypress/BDD/**/*.feature',
@@ -42,7 +43,7 @@ module.exports = defineConfig({
       openMode: 0
    },
   env:{
-    baseUrl:"https://manikandanravi.in",
+    baseUrl:"http://localhost:3002",
     url_goggle:"www.google.com",
     url_yahoo:"www.yahoo.com",
     url_bing:"www.bing.com"

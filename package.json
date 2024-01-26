@@ -11,7 +11,7 @@
     "cy:run:headed": "cypress run --browser chrome --headed --spec \"cypress/e2e/helloCypress/test/HomeTest.cy.js\"",
     "cy:run:headless": "cypress run --browser chrome --spec \"cypress/e2e/helloCypress/test/HomeTest.cy.js\"",
     "cy:open:headless:Test": "./node_modules/.bin/cypress run --browser chrome --spec \"cypress/e2e/helloCypress/test/mybioTest.cy.js\"",
-    "cy:run:headless:Test": "cypress open --browser chrome --spec \"cypress/e2e/helloCypress/test/mybioTest.cy.js\"",
+    "cy:run:headless:Test": "cypress run --browser chrome --spec \"cypress/e2e/helloCypress/test/mybioTest.cy.js\"",
     "cy:run:cloud": "cypress run --record --key 6e74778c-ca1b-4053-893e-a0d58cd21f76 --browser chrome --spec \"cypress/e2e/helloCypress/test/HomeTest.cy.js\""
   },
   "dependencies": {

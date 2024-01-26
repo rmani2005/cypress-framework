@@ -2,14 +2,14 @@
   "stats": {
     "suites": 3,
     "tests": 6,
-    "passes": 2,
+    "passes": 3,
     "pending": 0,
-    "failures": 4,
-    "start": "2024-01-26T00:13:21.250Z",
-    "end": "2024-01-26T00:13:23.795Z",
-    "duration": 2545,
+    "failures": 3,
+    "start": "2024-01-26T03:32:12.959Z",
+    "end": "2024-01-26T03:33:24.611Z",
+    "duration": 71652,
     "testsRegistered": 6,
-    "passPercent": 33.33333333333333,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "84b1eb2c-9488-4a04-b601-4a57a0191ace",
+      "uuid": "3f69db23-64ca-4638-bafd-6401ba675a75",
       "title": "",
       "fullFile": "cypress/e2e/helloCypress/test/mybioTest.cy.js",
       "file": "cypress/e2e/helloCypress/test/mybioTest.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4191d3df-029c-4b03-99f5-08a13f7bd3a4",
+          "uuid": "e4094c36-3b26-4e2a-9bb7-2983f574dcbe",
           "title": "TC001_Testing my bio site up and running",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,17 @@
               "title": "TC001a_Check the Header and header links",
               "fullTitle": "TC001_Testing my bio site up and running TC001a_Check the Header and header links",
               "timedOut": null,
-              "duration": 151,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 2179,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001a_Check the Header and header links (failed).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001a_Check the Header and header links (failed) (attempt 2).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001a_Check the Header and header links (failed) (attempt 3).png\"\n    ]\n  ]\n}",
+              "context": null,
               "code": "Browser.navigateTo(url);\nmy.checkTheHeader(\"Manikandan Ravi\", \"Projects\", \"Technology\", \"Timelines\");\n//Check the naivgation of the page with URL\nmy.checkTheHeaderNavigation(\"#projects\", \"#tech\", \"#about\");",
-              "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130960:76)\n    at visitFailedByErr (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130374:12)\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130943:13)\n    at tryCatcher (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at BrowserService.navigateTo (webpack:///./cypress/e2e/helloCypress/BrowserManager/BrowserService.js:14:17)\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:41:18)",
-                "diff": null
-              },
-              "uuid": "1f8357d4-5072-4483-8a5a-1e3d96185f26",
-              "parentUUID": "4191d3df-029c-4b03-99f5-08a13f7bd3a4",
+              "err": {},
+              "uuid": "57d03d61-f2dd-47ff-985c-bd7bae3b21da",
+              "parentUUID": "e4094c36-3b26-4e2a-9bb7-2983f574dcbe",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +56,7 @@
               "title": "TC001b_Check the Header and header links with invalid values",
               "fullTitle": "TC001_Testing my bio site up and running TC001b_Check the Header and header links with invalid values",
               "timedOut": null,
-              "duration": 185,
+              "duration": 11355,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,12 +65,12 @@
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001b_Check the Header and header links with invalid values (failed).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001b_Check the Header and header links with invalid values (failed) (attempt 2).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001b_Check the Header and header links with invalid values (failed) (attempt 3).png\"\n    ]\n  ]\n}",
               "code": "Browser.navigateTo(url);\nmy.checkTheHeader(\"Manikandan\", \"Projects123\", \"Technology444\", \"Timeline\");\n//Check the naivgation of the page with URL\nmy.checkTheHeaderNavigation(\"#projectsss\", \"#technologies\", \"#aboutMe\");",
               "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130960:76)\n    at visitFailedByErr (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130374:12)\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130943:13)\n    at tryCatcher (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at BrowserService.navigateTo (webpack:///./cypress/e2e/helloCypress/BrowserManager/BrowserService.js:14:17)\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:49:18)",
-                "diff": null
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<span.HeaderStyles__Span-sc-9w0vkp-1.eLNpfv>' to have text 'Manikandan', but the text was 'Manikandan Ravi'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<span.HeaderStyles__Span-sc-9w0vkp-1.eLNpfv>' to have text 'Manikandan', but the text was 'Manikandan Ravi'\n    at AssertionLibrary.AssertValueEqual (webpack:///./cypress/e2e/helloCypress/AssertionLibrary/AssertionLibrary.js:114:25)\n    at mybioPage.checkTheHeader (webpack:///./cypress/e2e/helloCypress/Page/mybioPage.js:50:11)\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:50:13)",
+                "diff": "- 'Manikandan Ravi'\n+ 'Manikandan'\n"
               },
-              "uuid": "81055b1d-0952-4772-a63f-6c317fc8bfcc",
-              "parentUUID": "4191d3df-029c-4b03-99f5-08a13f7bd3a4",
+              "uuid": "6463a216-62ce-4422-8a5a-8100038dedcd",
+              "parentUUID": "e4094c36-3b26-4e2a-9bb7-2983f574dcbe",
               "isHook": false,
               "skipped": false
             },
@@ -82,7 +78,7 @@
               "title": "TC001c_Check the Header and header links with invalid values",
               "fullTitle": "TC001_Testing my bio site up and running TC001c_Check the Header and header links with invalid values",
               "timedOut": null,
-              "duration": 155,
+              "duration": 11450,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -91,12 +87,12 @@
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001c_Check the Header and header links with invalid values (failed).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001c_Check the Header and header links with invalid values (failed) (attempt 2).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC001c_Check the Header and header links with invalid values (failed) (attempt 3).png\"\n    ]\n  ]\n}",
               "code": "Browser.navigateTo(url);\nmy.checkTheHeader(\"Manikandan\", \"Projects#%#%\", \"Tech\", \"Time line\");\n//Check the naivgation of the page with URL\nmy.checkTheHeaderNavigation(\"#proj\", \"#tech@$@\", \"#ABOUTUS\");",
               "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://manikandanravi.in/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130960:76)\n    at visitFailedByErr (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130374:12)\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:130943:13)\n    at tryCatcher (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at BrowserService.navigateTo (webpack:///./cypress/e2e/helloCypress/BrowserManager/BrowserService.js:14:17)\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:58:18)",
-                "diff": null
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<span.HeaderStyles__Span-sc-9w0vkp-1.eLNpfv>' to have text 'Manikandan', but the text was 'Manikandan Ravi'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<span.HeaderStyles__Span-sc-9w0vkp-1.eLNpfv>' to have text 'Manikandan', but the text was 'Manikandan Ravi'\n    at AssertionLibrary.AssertValueEqual (webpack:///./cypress/e2e/helloCypress/AssertionLibrary/AssertionLibrary.js:114:25)\n    at mybioPage.checkTheHeader (webpack:///./cypress/e2e/helloCypress/Page/mybioPage.js:50:11)\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:59:13)",
+                "diff": "- 'Manikandan Ravi'\n+ 'Manikandan'\n"
               },
-              "uuid": "9a925cc2-8ba2-4b90-8a15-2529546dd968",
-              "parentUUID": "4191d3df-029c-4b03-99f5-08a13f7bd3a4",
+              "uuid": "d20e8bec-1a18-40e3-b3f1-c1c477b41b1a",
+              "parentUUID": "e4094c36-3b26-4e2a-9bb7-2983f574dcbe",
               "isHook": false,
               "skipped": false
             },
@@ -104,7 +100,7 @@
               "title": "TC004_API GET call",
               "fullTitle": "TC001_Testing my bio site up and running TC004_API GET call",
               "timedOut": null,
-              "duration": 154,
+              "duration": 176,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -113,33 +109,34 @@
               "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC004_API GET call (failed).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC004_API GET call (failed) (attempt 2).png\"\n    ],\n    [\n      \"/mybioTest.cy.js/TC001_Testing my bio site up and running -- TC004_API GET call (failed) (attempt 3).png\"\n    ]\n  ]\n}",
               "code": "cy.request({\n  method: 'GET',\n  url: 'https://manikandanravi.in/api/hello',\n  qs: {\n    //starred: 'true'\n  },\n  headers: {\n    accept: 'application/json'\n  }\n});",
               "err": {
-                "message": "CypressError: `cy.request()` failed on:\n\nhttps://manikandanravi.in/api/hello\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://manikandanravi.in/api/hello\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 503 - Service Unavailable\nHeaders: {\n  \"server\": \"awselb/2.0\",\n  \"date\": \"Fri, 26 Jan 2024 00:13:23 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"564\",\n  \"connection\": \"keep-alive\"\n}\nBody: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request",
-                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://manikandanravi.in/api/hello\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://manikandanravi.in/api/hello\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 503 - Service Unavailable\nHeaders: {\n  \"server\": \"awselb/2.0\",\n  \"date\": \"Fri, 26 Jan 2024 00:13:23 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"564\",\n  \"connection\": \"keep-alive\"\n}\nBody: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request\n    at <unknown> (https://manikandanravi.in/__cypress/runner/cypress_runner.js:133030:72)\n    at tryCatcher (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://manikandanravi.in/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://manikandanravi.in/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:69:15)",
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://manikandanravi.in/api/hello\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://manikandanravi.in/api/hello\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 503 - Service Unavailable\nHeaders: {\n  \"server\": \"awselb/2.0\",\n  \"date\": \"Fri, 26 Jan 2024 03:33:25 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"564\",\n  \"connection\": \"keep-alive\"\n}\nBody: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://manikandanravi.in/api/hello\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://manikandanravi.in/api/hello\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"accept\": \"application/json\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 503 - Service Unavailable\nHeaders: {\n  \"server\": \"awselb/2.0\",\n  \"date\": \"Fri, 26 Jan 2024 03:33:25 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"564\",\n  \"connection\": \"keep-alive\"\n}\nBody: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n\nhttps://on.cypress.io/request\n    at <unknown> (http://localhost:3002/__cypress/runner/cypress_runner.js:133030:72)\n    at tryCatcher (http://localhost:3002/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3002/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:3002/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:3002/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:3002/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (http://localhost:3002/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:3002/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:3002/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:3002/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/helloCypress/test/mybioTest.cy.js:69:15)",
                 "diff": null
               },
-              "uuid": "1229d356-9ef5-4c2d-b716-ac524e20d3a1",
-              "parentUUID": "4191d3df-029c-4b03-99f5-08a13f7bd3a4",
+              "uuid": "cc62e5fb-4261-437b-ae9d-a85d2efd9a31",
+              "parentUUID": "e4094c36-3b26-4e2a-9bb7-2983f574dcbe",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
+          "passes": [
+            "57d03d61-f2dd-47ff-985c-bd7bae3b21da"
+          ],
           "failures": [
-            "1f8357d4-5072-4483-8a5a-1e3d96185f26",
-            "81055b1d-0952-4772-a63f-6c317fc8bfcc",
-            "9a925cc2-8ba2-4b90-8a15-2529546dd968",
-            "1229d356-9ef5-4c2d-b716-ac524e20d3a1"
+            "6463a216-62ce-4422-8a5a-8100038dedcd",
+            "d20e8bec-1a18-40e3-b3f1-c1c477b41b1a",
+            "cc62e5fb-4261-437b-ae9d-a85d2efd9a31"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 645,
+          "duration": 25160,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "9dbbdf66-ed8b-4116-a6e3-0185d5e10b5c",
+          "uuid": "e89dcb78-1d16-4f7a-b623-80b518edc3ef",
           "title": "TC002_Test to check Cypress built it API to get the title",
           "fullFile": "",
           "file": "",
@@ -150,7 +147,7 @@
               "title": "The Cypress built it API to get the title",
               "fullTitle": "TC002_Test to check Cypress built it API to get the title The Cypress built it API to get the title",
               "timedOut": null,
-              "duration": 26,
+              "duration": 17,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -159,26 +156,26 @@
               "context": null,
               "code": "expect(Cypress.currentTest.title).to.eq('The Cypress built it API to get the title');",
               "err": {},
-              "uuid": "3e82056e-2b02-4771-b2f7-36742e39f2c0",
-              "parentUUID": "9dbbdf66-ed8b-4116-a6e3-0185d5e10b5c",
+              "uuid": "fe9ed0cf-fa7c-4fa8-af6d-922c46c285f8",
+              "parentUUID": "e89dcb78-1d16-4f7a-b623-80b518edc3ef",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3e82056e-2b02-4771-b2f7-36742e39f2c0"
+            "fe9ed0cf-fa7c-4fa8-af6d-922c46c285f8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26,
+          "duration": 17,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "a5878eef-47ba-4022-a03e-7f4dbe5d08a0",
+          "uuid": "9fac51d3-2957-446d-9498-48e61f0e5890",
           "title": "TC003_Test to check Cypress built it API to get the title & its path",
           "fullFile": "",
           "file": "",
@@ -189,7 +186,7 @@
               "title": "The Cypress built it API to get the title & its path",
               "fullTitle": "TC003_Test to check Cypress built it API to get the title & its path The Cypress built it API to get the title & its path",
               "timedOut": null,
-              "duration": 17,
+              "duration": 16,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -198,20 +195,20 @@
               "context": null,
               "code": "//Chai - expect keyword from chai\nexpect(Cypress.currentTest.titlePath).to.deep.eq(['TC003_Test to check Cypress built it API to get the title & its path', 'The Cypress built it API to get the title & its path']);",
               "err": {},
-              "uuid": "55babb89-f726-4ac3-abf9-1ae714d6c478",
-              "parentUUID": "a5878eef-47ba-4022-a03e-7f4dbe5d08a0",
+              "uuid": "7d4688f4-a9cd-4e24-a27c-8a5350254547",
+              "parentUUID": "9fac51d3-2957-446d-9498-48e61f0e5890",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "55babb89-f726-4ac3-abf9-1ae714d6c478"
+            "7d4688f4-a9cd-4e24-a27c-8a5350254547"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17,
+          "duration": 16,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

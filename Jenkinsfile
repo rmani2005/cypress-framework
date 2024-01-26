@@ -18,6 +18,7 @@ agent any
             steps {
                 sh 'node -v'
                 sh 'npm install'
+                sh './node_modules/.bin/cypress install --force'
                 //Execute the Cypress scripts
                 sh 'npm run cy:open:headless:Test'
             }
